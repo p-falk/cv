@@ -2,12 +2,20 @@
 // Answers
 const cvAnswers = [
   {
-    keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot"],
+    keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot", "who are you"],
     answer: "This is a small chatbot for exploring Petter Falk's CV and website. Ask me about his research, publications, teaching, projects or work experience. I answer from a set of prepared responses, so I may not know the answer to every question."
   },
   {
     keywords: ["are you an ai", "are you a robot"],
     answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
+  },
+  {
+    keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
+    answer: "Indiana Jones (the old movies—not the new ones)."
+  },
+  {
+    keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
+    answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
   },
   {
     keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
@@ -42,7 +50,7 @@ const cvAnswers = [
     answer: "Petter appears regularly in Swedish media on AI, data and welfare. Recent examples include <a href='https://thequantuminsider.com/2026/10/15/sweden-european-skills-academies-quantum-ai/' target='_blank' rel='noopener'>The Quantum Insider</a> and <a href='https://offentligaaffarer.se/sverige-gar-med-i-europas-ai-akademi/' target='_blank' rel='noopener'>Offentliga Affärer</a> (October 2026), an opinion piece in <a href='https://www.dn.se/debatt/nar-data-gors-till-gud-blir-lakare-inget-annat-an-tjanare/' target='_blank' rel='noopener'>Dagens Nyheter</a> on datafication and welfare (2024), <a href='https://www.sverigesradio.se/artikel/fusk-med-ai-allt-vanligare-forsta-misstankta-fallet-upptackt-pa-karlstads-universitet' target='_blank' rel='noopener'>Sveriges Radio</a> on AI and teaching (2023), the podcast <a href='https://open.spotify.com/episode/3VvAQafcoPknlc6zUxBUQu?si=mtLdlhqpR_6xmdTqhPiNwQ' target='_blank' rel='noopener'>Demokratidatapodden</a> (2022), and <a href='https://www.svt.se/nyheter/forskarens-varning-robothaverier-kan-skada-fortroendet' target='_blank' rel='noopener'>SVT Nyheter</a> on algorithmic decision-making (2019). See the <a href='research.html'>Research page</a> for the full list."
   },
   {
-    keywords: ["personality", "personal", "character", "temperament", "humor", "humour", "who is he", "who is petter", "who are you", "what is he like", "funny"],
+    keywords: ["personality", "personal", "character", "temperament", "humor", "humour", "who is he", "who is petter", "what is he like", "funny"],
     answer: "I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
   },
   {
@@ -99,14 +107,6 @@ const cvAnswers = [
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
     answer: "I don't know. Aliens?"
   }
-   {
-    keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
-    answer: "Indiana Jones (the old movies - not the new ones."
-  },
-  {
-    keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
-    answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
-  },
 ];
 
 // DOM references
@@ -171,5 +171,3 @@ if (form && input && messages) {
   });
 }
 ```
-
-The answers are still **rule-based**: if a question matches more than one entry, the first matching entry in `cvAnswers` wins.
