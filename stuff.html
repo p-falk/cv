@@ -118,19 +118,37 @@
 
       <section class="stuff-section" aria-labelledby="other-heading">
         <h2 id="other-heading">//I got a password</h2>
-        <script>
+<section class="stuff-section" aria-labelledby="other-heading">
+  <h2 id="other-heading">//I got a password</h2>
+ 
+  <div class="intro" id="menu-lock">
+    <form id="unlock-form">
+      <label for="menu-password">Enter your password to access additional info:</label>
+      <p>
+        <input id="menu-password" type="password" autocomplete="off" required>
+        <button type="submit">Unlock →</button>
+      </p>
+      <p id="unlock-error" role="alert" hidden>That password didn’t work.</p>
+    </form>
+  </div>
+ 
+  <div class="intro" id="site-menu" hidden>
+    <p>Your additional info goes here.</p>
+  </div>
+</section>
+ 
+<script>
   const form = document.getElementById("unlock-form");
   const lock = document.getElementById("menu-lock");
   const menu = document.getElementById("site-menu");
   const error = document.getElementById("unlock-error");
-
+ 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-
+ 
     if (document.getElementById("menu-password").value === "moose") {
       lock.hidden = true;
       menu.hidden = false;
-      menu.querySelector("a").focus();
     } else {
       error.hidden = false;
     }
