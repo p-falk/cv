@@ -5,7 +5,7 @@ const cvAnswers = [
   },
   {
     keywords: ["are you an ai", "are you a robot"],
-    answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
+    answer: "AFFIRMATIVE *blip* *blop* *blip* I AM A ROBOT *blip* *blop* " 
   },
   {
     keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
@@ -102,7 +102,18 @@ const cvAnswers = [
     answer: "Click <a href='https://letmegooglethat.com/?q=Petter+Falk+Contact' target='_blank' rel='noopener'>this link</a>."
   },
   {
-    keywords: ["person"],
+  keywords: [
+    "petter ai skills",
+    "petter's ai skills",
+    "what are petter's ai skills",
+    "does petter work with ai",
+    "what does petter know about ai",
+    "artificial intelligence skills"
+  ],
+  answer: "Petter,  even though he is not a novice coder, having several AI courses under his belt, primaraly works with AI from a research perspective. His expertise is in how algorithmic systems affect welfare services, professional judgement and democracy. However, he has led projects involving AI implementation  in the public sector. For specific technical skills, it’s best to ask him directly."
+},
+  {
+    keywords: ["personality", "what is he like" "drink" "food" "vegan" "sports"],
     answer: "Slow down, cowboy! I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him."
   },
   {
@@ -115,7 +126,7 @@ const cvAnswers = [
   },
   {
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
-    answer: "I don't know. Aliens?"
+    answer: "I don't know... Aliens?"
   }
 ];
 
