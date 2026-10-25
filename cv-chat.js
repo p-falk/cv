@@ -103,7 +103,7 @@ const cvAnswers = [
   }
    {
     keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
-    answer: "Indiana Jones."
+    answer: "Indiana Jones (the old movies - not the new ones."
   },
   {
     keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
