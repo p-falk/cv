@@ -1,7 +1,7 @@
 const cvAnswers = [
   {
     keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot", "who are you"],
-    answer: "This is a small chatbot for exploring Petter Falk's CV and website. Ask me about his research, publications, teaching, projects or work experience. I answer from a set of prepared responses, so I may not know the answer to every question."
+    answer: "This is a small chatbot for exploring Petter Falk's CV. Ask me about his research, publications, teaching, projects or work experience. But a heads up; I may not know the answer to every question."
   },
   {
     keywords: ["are you an ai", "are you a robot"],
