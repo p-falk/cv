@@ -58,7 +58,6 @@ const cvAnswers = [
     keywords: ["sex", "dick", "penis", "ass", "looks", "best at"],
     answer: "Hey hey hey! This is a CV, not Onlyfans..."
   },
-  },
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
