@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Petter Falk – Stuff</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    [hidden] {
+      display: none !important;
+    }
+
+    .password-reveal summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .password-reveal summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .password-reveal summary span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body class="stuff-page">
   <div class="container">
@@ -23,7 +43,7 @@
       <p>Beyond the drudgery of wage labour.</p>
     </header>
 
-    <p class="note">Here's a bit of music, video, digital media production, and artsy side projects worth sharing. Oh, and there is a chat-bot further down. Ask it something.</p>
+    <p class="note">Here's a bit of music, video, digital media production, and artsy side projects worth sharing. Oh, and there is a chatbot further down. Ask it something.</p>
 
     <main>
       <section class="stuff-section" aria-labelledby="music-heading">
@@ -36,10 +56,7 @@
           </div>
           <p class="place">Alternative rock / folk · Sweden</p>
           <p>With my friends in cultural cooperative John Moose/Anlesser we make music as well as audiovisual and digital productions. We have gained recognition both nationally and internationally, receiving awards such as the Guldägget (Golden Egg) and the Guldvargen (Golden Wolf). We were also honored with the title "Värmland Cooperative of the Year 2016."</p>
-      
-    <p><a href="https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90">Listen on Spotify →</a></p>
-  </div>
-        
+          <p><a href="https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90">Listen on Spotify →</a></p>
         </div>
       </section>
 
@@ -50,7 +67,7 @@
 
         <div class="stuff-entry">
           <div class="entry-head">
-            <strong>>> John Moose: Go to the The Forest App</strong>
+            <strong>>> John Moose: Go to the Forest App</strong>
             <span class="date">2015</span>
           </div>
           <p class="place">Location-based music app</p>
@@ -130,7 +147,8 @@
 
       <hr class="section-divider">
 
-      <section class="cv-chat">
+      <section class="cv-chat" aria-labelledby="chat-heading">
+        <h2 id="chat-heading">//Ask about my CV</h2>
         <div id="chat-messages" class="chat-messages" role="log" aria-live="polite"></div>
         <form id="chat-form">
           <label for="chat-input">Have a question? Ask here</label>
@@ -143,23 +161,30 @@
 
       <hr class="section-divider">
 
-      <section class="stuff-section" aria-labelledby="other-heading">
-        <h2 id="other-heading">//Got a password?</h2>
+      <section class="stuff-section">
+        <details class="password-reveal">
+          <summary>
+            “The secret of getting ahead is getting started.”
+            <span>Click to reveal →</span>
+          </summary>
 
-        <div class="intro" id="menu-lock">
-          <form id="unlock-form">
-            <label for="menu-password">Enter your password to access additional info:</label>
-            <p>
-              <input id="menu-password" type="password" autocomplete="off" required>
-              <button type="submit">Unlock →</button>
-            </p>
-            <p id="unlock-error" role="alert" hidden>Nice try, but that password didn't work. Fail once more and your computer blows up</p>
-          </form>
-        </div>
+          <h2>//Got a password?</h2>
 
-        <div class="intro" id="site-menu" hidden>
-          <p>Additional info:</p>
-        </div>
+          <div class="intro" id="menu-lock">
+            <form id="unlock-form">
+              <label for="menu-password">Enter your password to access additional info:</label>
+              <p>
+                <input id="menu-password" type="password" autocomplete="off" required>
+                <button type="submit">Unlock →</button>
+              </p>
+              <p id="unlock-error" role="alert" hidden>Nice try, but that password didn't work. Fail once more and your computer blows up</p>
+            </form>
+          </div>
+
+          <div class="intro" id="site-menu" hidden>
+            <p>Additional info:</p>
+          </div>
+        </details>
       </section>
     </main>
 
