@@ -335,3 +335,8 @@ footer {
   list-style: none;
   padding-left: 0;
 }
+  .section-divider {
+  border: 0;
+  border-top: 1px solid #d3d3d3;
+  margin: 48px 0;
+}
