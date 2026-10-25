@@ -1,7 +1,7 @@
-.quote-reveal summary {
-  font-size: 0.85rem;
-}/* ============
-   CV – Gôtt mörkt tema
+
+```css
+/* ============
+   Mörkt tema
    ============ */
 
 :root {
@@ -14,7 +14,9 @@
   --border: #262626;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -38,6 +40,7 @@ header {
   margin-bottom: 48px;
   border-bottom: 1px solid var(--border);
 }
+
 h1 {
   margin: 0 0 8px;
   font-size: 2rem;
@@ -46,7 +49,12 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
 }
-header p { margin: 3px 0 0; color: var(--muted); font-size: 0.9rem; }
+
+header p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 
 h2 {
   font-size: 1rem;
@@ -59,16 +67,29 @@ h2 {
   border-bottom: 2px solid #e0e0e0;
 }
 
-a { color: #ffffff; text-decoration: underline; }
-a:visited { color: #ffffff; }
-a:hover { color: #e0e0e0; }
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #e0e0e0;
+}
 
 .entry {
   padding: 14px 0;
   margin-bottom: 8px;
   border-bottom: 1px solid var(--border);
 }
-.entry:last-of-type { border-bottom: none; }
+
+.entry:last-of-type {
+  border-bottom: none;
+}
+
 .entry-head {
   display: flex;
   justify-content: space-between;
@@ -76,15 +97,30 @@ a:hover { color: #e0e0e0; }
   gap: 16px;
   flex-wrap: wrap;
 }
-.entry-head strong { font-size: 1rem; font-weight: 400; color: #fff; }
+
+.entry-head strong {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 .date {
   color: var(--muted);
   font-size: 0.85rem;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
-.place { color: var(--muted); font-size: 0.85rem; margin: 3px 0; }
-.entry p { margin: 4px 0; font-size: 0.9rem; }
+
+.place {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 3px 0;
+}
+
+.entry p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
 
 table {
   width: 100%;
@@ -92,11 +128,14 @@ table {
   margin-top: 12px;
   font-size: 0.85rem;
 }
-th, td {
+
+th,
+td {
   padding: 8px 10px;
   text-align: left;
   border-bottom: 1px solid var(--border);
 }
+
 th {
   font-weight: 400;
   text-transform: uppercase;
@@ -118,6 +157,7 @@ footer {
   padding-top: 20px;
   border-top: 1px solid var(--border);
   color: var(--muted);
+}
 
 .site-nav {
   margin-bottom: 48px;
@@ -131,7 +171,7 @@ footer {
 .video-divider,
 .section-divider {
   border: 0;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #d3d3d3;
 }
 
 .video-divider {
@@ -141,6 +181,7 @@ footer {
 .section-divider {
   margin: 48px 0;
 }
+
 .intro {
   max-width: 65ch;
   margin: 40px 0;
@@ -157,7 +198,16 @@ footer {
 .intro p:last-child {
   margin-bottom: 0;
 }
-   .quote {
+
+.intro-secondary {
+  font-size: 0.8em;
+}
+
+.degree {
+  font-size: 0.3em;
+}
+
+.quote {
   position: relative;
   margin: 48px 0;
   padding: 12px 0 12px 28px;
@@ -184,22 +234,25 @@ footer {
   font-size: 0.85rem;
   font-style: normal;
 }
-   .quote-reveal {
+
+.quote-reveal {
   margin-top: 32px;
 }
+
 .quote-reveal summary {
   font-size: 0.75rem;
-  color: #b0b0b0;        /* faded grey */
+  color: #b0b0b0;
   cursor: pointer;
-  outline: none;
-  width: fit-content;    /* only the word itself is clickable */
+  width: fit-content;
 }
- 
+
 .quote-reveal summary:hover {
-  color: #777;           /* slightly darker on hover */
+  color: #777;
 }
-  .publist {
-  padding-left: 1.6rem;
+
+.publist {
+  list-style: none;
+  padding-left: 0;
 }
 
 .publist li {
@@ -216,11 +269,14 @@ footer {
 .publist a {
   overflow-wrap: anywhere;
 }
-  .site-gif {
+
+.site-gif {
   max-width: 100%;
   height: auto;
 }
+
 /* Stuff page only */
+
 .stuff-page .container {
   max-width: 900px;
 }
@@ -327,29 +383,13 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .container {
+    margin: 0;
+    padding: 24px;
+  }
+
   .video-grid {
     grid-template-columns: 1fr;
   }
 }
-  .publist {
-  list-style: none;
-  padding-left: 0;
-}
-  .section-divider {
-  border: 0;
-  border-top: 1px solid #d3d3d3;
-  margin: 48px 0;
-}
-.degree {
-  font-size: 0.3em;
-}
-
-.intro-secondary {
-  font-size: 0.8em;
-}
-
-.section-divider {
-  border: 0;
-  border-top: 1px solid #d3d3d3;
-  margin: 48px 0;
-}
+```
