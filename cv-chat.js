@@ -56,6 +56,14 @@ const cvAnswers = [
     answer: "Petter currently holds two roles: Senior Lecturer in Political Science at <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad University</a> (January 2026–present), where he leads research and development projects on democracy, algorithmic systems and data in the public sector, and postdoc in Media and Communication Studies at <a href='https://www.sh.se/' target='_blank' rel='noopener'>Södertörn University</a> in Stockholm (2025–2027). Before that he was Lecturer at Karlstad University (2021–2026), Project Manager at <a href='https://www.ri.se/' target='_blank' rel='noopener'>RISE Research Institutes of Sweden</a> (2016–2020), Data Analyst and Project Manager at Attityd i Karlstad (2012–2016), and Case Officer at the City of Karlstad City Management Office (2009–2012). Full details are on the <a href='cv.html'>CV page</a>."
   },
   {
+  keywords: [
+    "does petter play music",
+    "does petter make music",
+    "is petter a musician"
+  ],
+  answer: "Yes. Petter has played in many bands. John Moose is his only current music project, where he plays bass and synthesisers and does visual work."
+},
+  {
     keywords: ["publication", "publications", "articles", "books", "book chapters", "publish", "published", "wrote", "writing", "journal", "digital vulnerabilities", "data matter", "dialogues in data power", "bibliography"],
     answer: "Petter's recent publications include the journal article <a href='https://doi.org/10.1177/01634437261446790' target='_blank' rel='noopener'>'Digital vulnerabilities'</a> in Media, Culture & Society (2026), a <a href='https://doi.org/10.23987/sts.178400' target='_blank' rel='noopener'>book review</a> in Science & Technology Studies (2026), his doctoral thesis <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a> (2024), the book chapter <a href='https://doi.org/10.51952/9781529238327.ch003' target='_blank' rel='noopener'>'In/visibilities in Data Studies'</a> in Dialogues in Data Power (2024), and <a href='https://ideas.repec.org/h/elg/eechap/21087_14.html' target='_blank' rel='noopener'>'Data Matter'</a> in The Materials of Service Design (2023). See the <a href='research.html'>Research page</a> for the full list."
   },
