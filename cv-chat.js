@@ -12,6 +12,16 @@ const cvAnswers = [
     answer: "Indiana Jones (the old movies—not the new ones)."
   },
   {
+  keywords: [
+    "how old is petter",
+    "how old is petter falk",
+    "petter age",
+    "petter's age",
+    "when was petter born"
+  ],
+  answer: "Born in another millennium. He remembers a world before smartphones—and the sound of dial-up internet connecting."
+},
+  {
     keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
     answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
   },
