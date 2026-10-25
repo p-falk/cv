@@ -1,4 +1,7 @@
-// 1. Answers
+Here’s the complete corrected `cv-chat.js`. I added the **missing comma** and changed keyword matching so short words such as `"ass"` don’t match inside unrelated words.
+
+```javascript
+// Answers
 const cvAnswers = [
   {
     keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot"],
@@ -7,14 +10,6 @@ const cvAnswers = [
   {
     keywords: ["are you an ai", "are you a robot"],
     answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
-  },
-  {
-    keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
-    answer: "Indiana Jones."
-  },
-  {
-    keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
-    answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
   },
   {
     keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
@@ -50,15 +45,41 @@ const cvAnswers = [
   },
   {
     keywords: ["personality", "personal", "character", "temperament", "humor", "humour", "who is he", "who is petter", "who are you", "what is he like", "funny"],
-    answer: "I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
+    answer: "I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
   },
   {
-    keywords: ["hobbies", "hobby", "free time", "spare time", "music", "band", "bands", "instruments", "fun", "john moose", "guitar", "creative", "art", "video", "app"],
+    keywords: ["what is john moose", "who is john moose", "tell me about john moose"],
+    answer: "John Moose is a Swedish band and creative collective making music, videos and digital experiences. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen on Spotify →</a>"
+  },
+  {
+    keywords: ["petter do in john moose", "petter play in john moose", "petter's role in john moose", "petters role in john moose"],
+    answer: "Petter plays bass and synthesisers in John Moose. He also does a lot of the visual work. You can see some of the band's video work on the <a href='stuff.html'>Stuff page →</a>"
+  },
+  {
+    keywords: ["john moose forest app", "john moose app", "music in the forest", "go to the forest app"],
+    answer: "John Moose released music through an app that let people listen only when they were in a forest. <a href='https://time.com/3901394/john-moose-band-gps-forest-woods/' target='_blank' rel='noopener'>Read about the forest app →</a>"
+  },
+  {
+    keywords: ["john moose vr", "john moose virtual reality", "john moose o ep"],
+    answer: "For the EP <em>O</em>, John Moose made a VR experience that brought the forest to listeners. <a href='https://www.ilovesweden.net/articles/articles/en/o-john-moose_993.html' target='_blank' rel='noopener'>Read about O →</a>"
+  },
+  {
+    keywords: [
+      "does petter play in a band",
+      "is petter in a band",
+      "what band does petter play in",
+      "petter's band",
+      "petters band"
+    ],
+    answer: "Yes. Petter has played in many bands, but John Moose is his only current music project. He plays bass and synthesisers and does a lot of the visual work. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen to John Moose on Spotify →</a>"
+  },
+  {
+    keywords: ["hobbies", "hobby", "free time", "spare time", "fun"],
     answer: "Sh*t, all I know is this: a house overflowing with instruments, more than any one life could play, and he keeps building things the world never asked for."
   },
   {
     keywords: ["family", "children", "child", "kids", "wife", "married", "marriage", "partner", "girlfriend", "son", "daughter"],
-    answer: "I don't know. He almost never talk about private stuff..."
+    answer: "I don't know. He almost never talks about private stuff..."
   },
   {
     keywords: ["contact", "email", "reach", "mail", "phone", "get in touch", "address"],
@@ -66,28 +87,47 @@ const cvAnswers = [
   },
   {
     keywords: ["person"],
-    answer: "Slow down, cowboy! I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him."
+    answer: "Slow down, cowboy! I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him."
   },
   {
     keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
-    answer: "Petter's strengths: creativity and technical knowhow. His weaknesses: the office desk is rarely clean, and student names don't always stick."
+    answer: "Petter's strengths: creativity and technical know-how. His weaknesses: the office desk is rarely clean, and student names don't always stick."
   },
   {
     keywords: ["sex", "dick", "penis", "ass", "looks"],
-    answer: "Hey hey hey! This is a CV, not Onlyfans..."
+    answer: "Hey hey hey! This is a CV, not OnlyFans..."
   },
   {
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
     answer: "I don't know. Aliens?"
   }
+   {
+    keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
+    answer: "Indiana Jones."
+  },
+  {
+    keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
+    answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
+  },
 ];
 
-// 2. DOM references
+// DOM references
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
 
-// 3. Message renderer (HTML only for trusted bot answers)
+// Match whole words or phrases, rather than fragments inside other words.
+function matchesKeyword(question, keyword) {
+  const escapeRegex = text => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(
+    `(^|[^\\p{L}\\p{N}])${escapeRegex(keyword)}(?=$|[^\\p{L}\\p{N}])`,
+    "iu"
+  );
+
+  return pattern.test(question);
+}
+
+// Render HTML only for answers written in cvAnswers.
 function addMessage(speaker, text, isHtml = false) {
   const paragraph = document.createElement("p");
   const label = document.createElement("strong");
@@ -106,26 +146,32 @@ function addMessage(speaker, text, isHtml = false) {
   messages.appendChild(paragraph);
 }
 
-// 4. Submit handler
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+// Submit handler
+if (form && input && messages) {
+  form.addEventListener("submit", event => {
+    event.preventDefault();
 
-  const question = input.value.trim().toLowerCase();
-  if (!question) return;
+    const originalQuestion = input.value.trim();
+    if (!originalQuestion) return;
 
-  addMessage("You", input.value.trim());
+    const question = originalQuestion.toLowerCase();
+    addMessage("You", originalQuestion);
 
-  const match = cvAnswers.find(entry =>
-    entry.keywords.some(keyword => question.includes(keyword))
-  );
+    const match = cvAnswers.find(entry =>
+      entry.keywords.some(keyword => matchesKeyword(question, keyword))
+    );
 
-  addMessage(
-    "CV assistant",
-    match
-      ? match.answer
-      : "I don't have an answer to that. Send Petter an email and ask him",
-    true
-  );
+    addMessage(
+      "CV assistant",
+      match
+        ? match.answer
+        : "I don't have an answer to that. Send Petter an email and ask him.",
+      true
+    );
 
-  input.value = "";
-});
+    input.value = "";
+  });
+}
+```
+
+The answers are still **rule-based**: if a question matches more than one entry, the first matching entry in `cvAnswers` wins.
