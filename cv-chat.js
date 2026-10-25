@@ -60,6 +60,10 @@ const cvAnswers = [
     keywords: ["sex", "dick", "penis", "ass", "looks"],
     answer: "Hey hey hey! This is a CV, not Onlyfans..."
   }
+    {
+    keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
+    answer: "I don't know. Aliens?"
+  },
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
