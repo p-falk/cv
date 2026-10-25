@@ -1,6 +1,22 @@
 // 1. Answers
 const cvAnswers = [
   {
+    keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot"],
+    answer: "This is a small chatbot for exploring Petter Falk's CV and website. Ask me about his research, publications, teaching, projects or work experience. I answer from a set of prepared responses, so I may not know the answer to every question."
+  },
+  {
+    keywords: ["are you an ai", "are you a robot"],
+    answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
+  },
+  {
+    keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
+    answer: "Indiana Jones."
+  },
+  {
+    keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
+    answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
+  },
+  {
     keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
     answer: "Petter's research sits at the intersection of democracy, algorithmic systems and data in the public sector — with a particular focus on the datafication of the welfare state: what happens to care, trust and democracy when welfare institutions become data-driven. He currently studies digital vulnerability within the datafied welfare state through the Swedish Research Council project 'Digital Vulnerability', and is part of the <a href='https://wasp-hs.org/' target='_blank' rel='noopener'>WASP-HS</a> cluster 'The AI Welfare State'. His doctoral thesis (2024), <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a>, was an ethnographic study of how datafication reshapes everyday work in Swedish public care. He was also the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
   },
@@ -37,7 +53,7 @@ const cvAnswers = [
     answer: "I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
   },
   {
-    keywords: ["hobbies", "hobby", "free time", "spare time", "music", "band", "bands", "instruments", "fun", "like", "john moose", "guitar", "creative", "art", "video", "app"],
+    keywords: ["hobbies", "hobby", "free time", "spare time", "music", "band", "bands", "instruments", "fun", "john moose", "guitar", "creative", "art", "video", "app"],
     answer: "Sh*t, all I know is this: a house overflowing with instruments, more than any one life could play, and he keeps building things the world never asked for."
   },
   {
@@ -49,7 +65,7 @@ const cvAnswers = [
     answer: "Click <a href='https://letmegooglethat.com/?q=Petter+Falk+Contact' target='_blank' rel='noopener'>this link</a>."
   },
   {
-    keywords: ["person", "like"],
+    keywords: ["person"],
     answer: "Slow down, cowboy! I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him."
   },
   {
@@ -64,25 +80,9 @@ const cvAnswers = [
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
     answer: "I don't know. Aliens?"
   }
-  {
-  keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot"],
-  answer: "This is a small chatbot for exploring Petter Falk's CV and website. Ask me about his research, publications, teaching, projects or work experience. I answer from a set of prepared responses, so I may not know the answer to every question."
-},
-  {
-  keywords: ["are you an ai", "are you a robot"],
-  answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
-},
-    {
-  keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
-  answer: "Indiana Jones."
-},
-      {
-  keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
-  answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
-},
 ];
 
-// 2. DOM references — adjust IDs to match your HTML
+// 2. DOM references
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
@@ -91,8 +91,10 @@ const messages = document.getElementById("chat-messages");
 function addMessage(speaker, text, isHtml = false) {
   const paragraph = document.createElement("p");
   const label = document.createElement("strong");
+
   label.textContent = `${speaker}: `;
   paragraph.append(label);
+
   if (isHtml) {
     const span = document.createElement("span");
     span.innerHTML = text;
@@ -100,16 +102,18 @@ function addMessage(speaker, text, isHtml = false) {
   } else {
     paragraph.append(document.createTextNode(text));
   }
+
   messages.appendChild(paragraph);
 }
 
 // 4. Submit handler
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+
   const question = input.value.trim().toLowerCase();
   if (!question) return;
 
-  addMessage("You", input.value.trim()); // plain text, safe
+  addMessage("You", input.value.trim());
 
   const match = cvAnswers.find(entry =>
     entry.keywords.some(keyword => question.includes(keyword))
