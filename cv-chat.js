@@ -28,7 +28,6 @@ const cvAnswers = [
     keywords: ["media", "press", "interview", "news", "podcast", "radio", "tv", "svt", "dn", "dagens nyheter", "appeared", "opinion", "debate", "journalist"],
     answer: "Petter appears regularly in Swedish media on AI, data and welfare. Recent examples include <a href='https://thequantuminsider.com/2026/10/15/sweden-european-skills-academies-quantum-ai/' target='_blank' rel='noopener'>The Quantum Insider</a> and <a href='https://offentligaaffarer.se/sverige-gar-med-i-europas-ai-akademi/' target='_blank' rel='noopener'>Offentliga Affärer</a> (October 2026), an opinion piece in <a href='https://www.dn.se/debatt/nar-data-gors-till-gud-blir-lakare-inget-annat-an-tjanare/' target='_blank' rel='noopener'>Dagens Nyheter</a> on datafication and welfare (2024), <a href='https://www.sverigesradio.se/artikel/fusk-med-ai-allt-vanligare-forsta-misstankta-fallet-upptackt-pa-karlstads-universitet' target='_blank' rel='noopener'>Sveriges Radio</a> on AI and teaching (2023), the podcast <a href='https://open.spotify.com/episode/3VvAQafcoPknlc6zUxBUQu?si=mtLdlhqpR_6xmdTqhPiNwQ' target='_blank' rel='noopener'>Demokratidatapodden</a> (2022), and <a href='https://www.svt.se/nyheter/forskarens-varning-robothaverier-kan-skada-fortroendet' target='_blank' rel='noopener'>SVT Nyheter</a> on algorithmic decision-making (2019). See the <a href='research.html'>Research page</a> for the full list."
   },
- 
   {
     keywords: ["personality", "personal", "character", "temperament", "humor", "humour", "who is he", "who is petter", "who are you", "what is he like", "funny"],
     answer: "I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
@@ -37,27 +36,26 @@ const cvAnswers = [
     keywords: ["hobbies", "hobby", "free time", "spare time", "music", "band", "bands", "instruments", "fun", "like", "john moose", "guitar", "creative", "art", "video", "app"],
     answer: "Sh*t, all I know is this: a house overflowing with instruments, more than any one life could play, and he keeps building things the world never asked for."
   },
-    {
+  {
     keywords: ["family", "children", "child", "kids", "wife", "married", "marriage", "partner", "girlfriend", "son", "daughter"],
     answer: "I don't know. He almost never talk about private stuff..."
   },
-    {
+  {
     keywords: ["contact", "email", "reach", "mail", "phone", "get in touch", "address"],
     answer: "Click <a href='https://letmegooglethat.com/?q=Petter+Falk+Contact' target='_blank' rel='noopener'>this link</a>."
   },
   {
-    keywords: ["person", "personality", "like"],
+    keywords: ["person", "like"],
     answer: "Slow down, cowboy! I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him."
-  }
-    {
-   {
+  },
+  {
     keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
     answer: "Petter's strengths: creativity and technical knowhow. His weaknesses: the office desk is rarely clean, and student names don't always stick."
   },
-        {
-    keywords: ["sex", "dick", "penis", "ass", "looks", "best at"],
+  {
+    keywords: ["sex", "dick", "penis", "ass", "looks"],
     answer: "Hey hey hey! This is a CV, not Onlyfans..."
-  },
+  }
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
