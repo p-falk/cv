@@ -39,7 +39,7 @@ const cvAnswers = [
   },
     {
     keywords: ["family", "children", "child", "kids", "wife", "married", "marriage", "partner", "girlfriend", "son", "daughter"],
-    answer: "I don't know. He almost never talks about private stuff..."
+    answer: "I don't know. He almost never talk about private stuff..."
   },
     {
     keywords: ["contact", "email", "reach", "mail", "phone", "get in touch", "address"],
@@ -53,6 +53,10 @@ const cvAnswers = [
    {
     keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
     answer: "Petter's strengths: creativity and technical knowhow. His weaknesses: the office desk is rarely clean, and student names don't always stick."
+  },
+        {
+    keywords: ["sex", "dick", "penis", "ass", "looks", "best at"],
+    answer: "Hey hey hey! This is a CV, not Onlyfans..."
   },
   },
 ];
