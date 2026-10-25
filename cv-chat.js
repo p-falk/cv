@@ -4,7 +4,7 @@ const cvAnswers = [
     keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
     answer: "Petter's research sits at the intersection of democracy, algorithmic systems and data in the public sector — with a particular focus on the datafication of the welfare state: what happens to care, trust and democracy when welfare institutions become data-driven. He currently studies digital vulnerability within the datafied welfare state through the Swedish Research Council project 'Digital Vulnerability', and is part of the <a href='https://wasp-hs.org/' target='_blank' rel='noopener'>WASP-HS</a> cluster 'The AI Welfare State'. His doctoral thesis (2024), <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a>, was an ethnographic study of how datafication reshapes everyday work in Swedish public care. He was also the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
   },
-    {
+  {
     keywords: ["thesis", "theses", "phd thesis", "doctoral thesis", "dissertation", "assemble care", "align data", "defence", "defense", "what did he write", "ethnographic"],
     answer: "Petter's PhD thesis, <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a> (2024), is an ethnographic study of how datafication reshapes everyday work in Swedish public care. Drawing on fieldwork in care organisations, it explores what happens to care, trust and professional judgement when welfare work becomes data-driven. He defended it at <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad University</a> as the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
   },
@@ -59,11 +59,11 @@ const cvAnswers = [
   {
     keywords: ["sex", "dick", "penis", "ass", "looks"],
     answer: "Hey hey hey! This is a CV, not Onlyfans..."
-  }
-    {
+  },
+  {
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
     answer: "I don't know. Aliens?"
-  },
+  }
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
