@@ -113,9 +113,9 @@ const cvAnswers = [
     answer: "Slow down, cowboy! I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him."
   },
   {
-  keywords: ["what is the password", "what's the password", "password"],
-  answer: "To receive the password, you must n. <a href='https://www.youtube.com/watch?v=kc5hzGXiEUc' target='_blank' rel='noopener noreferrer'>find the jade monkey before the next full moon</a>"
-},
+    keywords: ["what is the password", "what's the password", "password"],
+    answer: "To receive the password, you must <a href='https://www.youtube.com/watch?v=kc5hzGXiEUc' target='_blank' rel='noopener noreferrer'>find the jade monkey before the next full moon</a>."
+  },
   {
     keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
     answer: "Petter's strengths: creativity and technical know-how. His weaknesses: the office desk is rarely clean, and student names don't always stick."
