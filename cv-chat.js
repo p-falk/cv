@@ -1,5 +1,3 @@
-```javascript
-// Answers
 const cvAnswers = [
   {
     keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot", "who are you"],
@@ -18,12 +16,32 @@ const cvAnswers = [
     answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
   },
   {
-    keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
-    answer: "Petter's research sits at the intersection of democracy, algorithmic systems and data in the public sector — with a particular focus on the datafication of the welfare state: what happens to care, trust and democracy when welfare institutions become data-driven. He currently studies digital vulnerability within the datafied welfare state through the Swedish Research Council project 'Digital Vulnerability', and is part of the <a href='https://wasp-hs.org/' target='_blank' rel='noopener'>WASP-HS</a> cluster 'The AI Welfare State'. His doctoral thesis (2024), <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a>, was an ethnographic study of how datafication reshapes everyday work in Swedish public care. He was also the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
+    keywords: ["john moose forest app", "john moose app", "music in the forest", "go to the forest app"],
+    answer: "John Moose released music through an app that let people listen only when they were in a forest. <a href='https://time.com/3901394/john-moose-band-gps-forest-woods/' target='_blank' rel='noopener'>Read about the forest app →</a>"
+  },
+  {
+    keywords: ["john moose vr", "john moose virtual reality", "john moose o ep"],
+    answer: "For the EP <em>O</em>, John Moose made a VR experience that brought the forest to listeners. <a href='https://www.ilovesweden.net/articles/articles/en/o-john-moose_993.html' target='_blank' rel='noopener'>Read about O →</a>"
+  },
+  {
+    keywords: ["petter do in john moose", "petter play in john moose", "petter's role in john moose", "petters role in john moose"],
+    answer: "Petter plays bass and synthesisers in John Moose. He also does a lot of the visual work. You can see some of the band's video work on the <a href='stuff.html'>Stuff page →</a>"
+  },
+  {
+    keywords: ["does petter play in a band", "is petter in a band", "what band does petter play in", "petter's band", "petters band", "does petter play in any bands"],
+    answer: "Yes. Petter has played in many bands, but John Moose is his only current music project. He plays bass and synthesisers and does a lot of the visual work. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen to John Moose on Spotify →</a>"
+  },
+  {
+    keywords: ["what is john moose", "who is john moose", "tell me about john moose", "john moose"],
+    answer: "John Moose is a Swedish band and creative collective making music, videos and digital experiences. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen on Spotify →</a>"
   },
   {
     keywords: ["thesis", "theses", "phd thesis", "doctoral thesis", "dissertation", "assemble care", "align data", "defence", "defense", "what did he write", "ethnographic"],
     answer: "Petter's PhD thesis, <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a> (2024), is an ethnographic study of how datafication reshapes everyday work in Swedish public care. Drawing on fieldwork in care organisations, it explores what happens to care, trust and professional judgement when welfare work becomes data-driven. He defended it at <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad University</a> as the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
+  },
+  {
+    keywords: ["research", "research interests", "study", "studies", "interests", "what does he research", "what does petter research", "research area", "focus", "fields", "welfare state", "algorithmic", "datafication", "digital vulnerability", "ai welfare state", "wasp-hs", "wasp"],
+    answer: "Petter's research sits at the intersection of democracy, algorithmic systems and data in the public sector — with a particular focus on the datafication of the welfare state: what happens to care, trust and democracy when welfare institutions become data-driven. He currently studies digital vulnerability within the datafied welfare state through the Swedish Research Council project 'Digital Vulnerability', and is part of the <a href='https://wasp-hs.org/' target='_blank' rel='noopener'>WASP-HS</a> cluster 'The AI Welfare State'. His doctoral thesis (2024), <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a>, was an ethnographic study of how datafication reshapes everyday work in Swedish public care. He was also the first PhD candidate to <a href='https://wasp-hs.org/event3/phd-defence-assemble-care-align-data-an-ethnographic-study-of-datafication-in-swedish-public-care/' target='_blank' rel='noopener'>defend within the WASP-HS doctoral programme</a>."
   },
   {
     keywords: ["education", "degree", "degrees", "phd", "doctorate", "doctoral", "master", "bachelor", "academic background", "qualifications", "trained", "hindi", "history of religions"],
@@ -52,32 +70,6 @@ const cvAnswers = [
   {
     keywords: ["personality", "personal", "character", "temperament", "humor", "humour", "who is he", "who is petter", "what is he like", "funny"],
     answer: "I can only answer for Petter's merits. If you wanna know about his personality, you will just have to meet him (maybe buy him a beer...)"
-  },
-  {
-    keywords: ["what is john moose", "who is john moose", "tell me about john moose"],
-    answer: "John Moose is a Swedish band and creative collective making music, videos and digital experiences. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen on Spotify →</a>"
-  },
-  {
-    keywords: ["petter do in john moose", "petter play in john moose", "petter's role in john moose", "petters role in john moose"],
-    answer: "Petter plays bass and synthesisers in John Moose. He also does a lot of the visual work. You can see some of the band's video work on the <a href='stuff.html'>Stuff page →</a>"
-  },
-  {
-    keywords: ["john moose forest app", "john moose app", "music in the forest", "go to the forest app"],
-    answer: "John Moose released music through an app that let people listen only when they were in a forest. <a href='https://time.com/3901394/john-moose-band-gps-forest-woods/' target='_blank' rel='noopener'>Read about the forest app →</a>"
-  },
-  {
-    keywords: ["john moose vr", "john moose virtual reality", "john moose o ep"],
-    answer: "For the EP <em>O</em>, John Moose made a VR experience that brought the forest to listeners. <a href='https://www.ilovesweden.net/articles/articles/en/o-john-moose_993.html' target='_blank' rel='noopener'>Read about O →</a>"
-  },
-  {
-    keywords: [
-      "does petter play in a band",
-      "is petter in a band",
-      "what band does petter play in",
-      "petter's band",
-      "petters band"
-    ],
-    answer: "Yes. Petter has played in many bands, but John Moose is his only current music project. He plays bass and synthesisers and does a lot of the visual work. <a href='https://open.spotify.com/artist/6Y8ldghnlu8Z05MYiWlE90' target='_blank' rel='noopener'>Listen to John Moose on Spotify →</a>"
   },
   {
     keywords: ["hobbies", "hobby", "free time", "spare time", "fun"],
@@ -109,51 +101,53 @@ const cvAnswers = [
   }
 ];
 
-// DOM references
-const form = document.getElementById("chat-form");
-const input = document.getElementById("chat-input");
-const messages = document.getElementById("chat-messages");
-
-// Match whole words or phrases, rather than fragments inside other words.
-function matchesKeyword(question, keyword) {
-  const escapeRegex = text => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const pattern = new RegExp(
-    `(^|[^\\p{L}\\p{N}])${escapeRegex(keyword)}(?=$|[^\\p{L}\\p{N}])`,
-    "iu"
-  );
-
-  return pattern.test(question);
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9åäö]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
 }
 
-// Render HTML only for answers written in cvAnswers.
-function addMessage(speaker, text, isHtml = false) {
-  const paragraph = document.createElement("p");
-  const label = document.createElement("strong");
+function matchesKeyword(question, keyword) {
+  return ` ${normalize(question)} `.includes(` ${normalize(keyword)} `);
+}
 
-  label.textContent = `${speaker}: `;
-  paragraph.append(label);
+function startChat() {
+  const form = document.getElementById("chat-form");
+  const input = document.getElementById("chat-input");
+  const messages = document.getElementById("chat-messages");
 
-  if (isHtml) {
-    const span = document.createElement("span");
-    span.innerHTML = text;
-    paragraph.append(span);
-  } else {
-    paragraph.append(document.createTextNode(text));
+  if (!form || !input || !messages) {
+    console.error("Chat could not start: chat-form, chat-input or chat-messages is missing.");
+    return;
   }
 
-  messages.appendChild(paragraph);
-}
+  function addMessage(speaker, text, isHtml = false) {
+    const paragraph = document.createElement("p");
+    const label = document.createElement("strong");
+    const content = document.createElement("span");
 
-// Submit handler
-if (form && input && messages) {
+    label.textContent = `${speaker}: `;
+
+    if (isHtml) {
+      content.innerHTML = text; // Answers are written in this file, not supplied by visitors.
+    } else {
+      content.textContent = text;
+    }
+
+    paragraph.append(label, content);
+    messages.appendChild(paragraph);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
   form.addEventListener("submit", event => {
     event.preventDefault();
 
-    const originalQuestion = input.value.trim();
-    if (!originalQuestion) return;
+    const question = input.value.trim();
+    if (!question) return;
 
-    const question = originalQuestion.toLowerCase();
-    addMessage("You", originalQuestion);
+    addMessage("You", question);
 
     const match = cvAnswers.find(entry =>
       entry.keywords.some(keyword => matchesKeyword(question, keyword))
@@ -168,6 +162,12 @@ if (form && input && messages) {
     );
 
     input.value = "";
+    input.focus();
   });
 }
-```
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", startChat);
+} else {
+  startChat();
+}
