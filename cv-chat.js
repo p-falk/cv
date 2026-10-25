@@ -123,7 +123,7 @@ form.addEventListener("submit", (event) => {
     "CV assistant",
     match
       ? match.answer
-      : "I don't have an answer to that in my CV summary. Please check the CV page for more information.",
+      : "I don't have an answer to that. Send Petter an email and ask him",
     true
   );
 
