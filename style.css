@@ -454,3 +454,14 @@ footer {
   font: inherit;
   cursor: pointer;
 }
+.quote-reveal .quote {
+  font-size: 0.85rem;
+}
+
+.quote-reveal .quote p {
+  margin: 0.25rem 0;
+}
+
+.quote-reveal .quote cite {
+  font-size: 0.8rem;
+}
