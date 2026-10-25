@@ -1,5 +1,3 @@
-Here’s the complete corrected `cv-chat.js`. I added the **missing comma** and changed keyword matching so short words such as `"ass"` don’t match inside unrelated words.
-
 ```javascript
 // Answers
 const cvAnswers = [
