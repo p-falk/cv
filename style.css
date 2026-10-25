@@ -340,3 +340,16 @@ footer {
   border-top: 1px solid #d3d3d3;
   margin: 48px 0;
 }
+.degree {
+  font-size: 0.3em;
+}
+
+.intro-secondary {
+  font-size: 0.8em;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid #d3d3d3;
+  margin: 48px 0;
+}
