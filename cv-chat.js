@@ -64,6 +64,22 @@ const cvAnswers = [
     keywords: ["who built", "who made", "who created", "who designed", "who coded", "who wrote this", "who built this page", "who made this page", "who created this page"],
     answer: "I don't know. Aliens?"
   }
+  {
+  keywords: ["what is this", "what is this site", "what is this page", "what is this chatbot"],
+  answer: "This is a small chatbot for exploring Petter Falk's CV and website. Ask me about his research, publications, teaching, projects or work experience. I answer from a set of prepared responses, so I may not know the answer to every question."
+},
+  {
+  keywords: ["are you an ai", "are you a robot"],
+  answer: "*Blip* *Blop* *Blip* I AM A ROBOT"
+},
+    {
+  keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
+  answer: "Indiana Jones."
+},
+      {
+  keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
+  answer: "These guys: <a href='https://www.youtube.com/watch?v=oFiDcazicdk' target='_blank' rel='noopener'>Clockworks →</a>"
+},
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
