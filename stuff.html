@@ -118,6 +118,24 @@
 
       <section class="stuff-section" aria-labelledby="other-heading">
         <h2 id="other-heading">//I got a password</h2>
+        <script>
+  const form = document.getElementById("unlock-form");
+  const lock = document.getElementById("menu-lock");
+  const menu = document.getElementById("site-menu");
+  const error = document.getElementById("unlock-error");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (document.getElementById("menu-password").value === "moose") {
+      lock.hidden = true;
+      menu.hidden = false;
+      menu.querySelector("a").focus();
+    } else {
+      error.hidden = false;
+    }
+  });
+</script>
 <div class="intro" id="menu-lock">
   <form id="unlock-form">
     <label for="menu-password">Enter your password to access additional info:</label>
