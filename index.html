@@ -23,10 +23,12 @@
       <hr class="section-divider">
 
       <section class="cv-chat" aria-labelledby="cv-chat-heading">
-        <h2 id="cv-chat-heading">Ask about Petter</h2>
-      
+        <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+          <p><strong>Have a question?:</strong> Ask the CV</p>
+        </div>
+
         <form id="chat-form">
-          <label for="chat-input">Your question</label>
+          <label for="chat-input">Type your question</label>
           <div class="chat-input-row">
             <input id="chat-input" type="text" required>
             <button type="submit">Ask →</button>
