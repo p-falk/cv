@@ -46,9 +46,15 @@ const cvAnswers = [
     answer: "Click <a href='https://letmegooglethat.com/?q=Petter+Falk+Contact' target='_blank' rel='noopener'>this link</a>."
   },
   {
-    keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
+    keywords: ["person", "personality", "like"],
     answer: "Slow down, cowboy! I can only answer for Petters merits. If you wanna know about his personality, you will just have to meet him."
   }
+    {
+   {
+    keywords: ["strengths", "strength", "weakness", "weaknesses", "good at", "best at", "skills", "talents", "talented"],
+    answer: "Petter's strengths: creativity and technical knowhow. His weaknesses: the office desk is rarely clean, and student names don't always stick."
+  },
+  },
 ];
 
 // 2. DOM references — adjust IDs to match your HTML
