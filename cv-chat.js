@@ -11,6 +11,14 @@ const cvAnswers = [
     keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
     answer: "Indiana Jones (the old movies—not the new ones)."
   },
+    {
+    keywords: ["what can you do", "what do you do", "what can this bot do", "what can the chat do", "help", "how does this work", "what can i ask", "commands", "abilities", "what are you", "what is this", "chatbot", "bot", "assistant", "can you"],
+    answer: "I'm a simple CV assistant. Ask me about Petter's research, thesis, education, teaching, work experience, publications, projects, workshops and facilitation, media appearances, or how to contact him — and I'll answer from the CV. I can't chat about anything else, so keep it to his merits. Try asking 'what does he research' or 'where does he work'."
+  },
+    {
+    keywords: ["joke", "tell me a joke", "say something funny", "make me laugh", "funniest", "tell a joke"],
+    answer: "Why did the data analyst break up with the spreadsheet? Too many issues with commitment."
+  },
   {
     keywords: [
       "how old is petter",
@@ -18,6 +26,7 @@ const cvAnswers = [
       "petter age",
       "petter's age",
       "when was petter born"
+      "age"
     ],
     answer: "Born in another millennium. He remembers a world before smartphones—and the sound of dial-up internet connecting."
   },
