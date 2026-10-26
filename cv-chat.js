@@ -12,6 +12,10 @@ const cvAnswers = [
     answer: "O'hoy comrade! Got questions on Petter's research, teaching, projects, workshops or where to find him? Ask away!"
   },
   {
+    keywords: ["do you like petter", "do you like him", "do you like petter falk", "do you like your creator", "do you like your maker"],
+    answer: "Well...you know <a href='https://i.pinimg.com/originals/d4/c3/98/d4c3985cf6bbe712b6f70002de0e5fe8.gif' target='_blank' rel='noopener noreferrer'>what robots think of humans, right?</a>"
+  },
+  {
     keywords: ["other languages", "another language", "swedish", "svenska", "do you speak", "can you speak", "language", "languages", "translate", "english only", "in english", "språk"],
     answer: "Unfortunately I as a chatbot only speak English. That cheep bastard Petter built me on a budget. But he himself speaks Swedish, English and, if necessity demands it, some German. Oh, and a few conversational phrases in Hindi that he picked up in India."
   },
