@@ -11,6 +11,10 @@ const cvAnswers = [
     keywords: ["hello", "hi", "hey", "hej", "good morning", "good evening", "good afternoon", "yo", "greetings"],
     answer: "O'hoy comrade! Got questions on Petter's research, teaching, projects, workshops or where to find him? Ask away!"
   },
+    {
+    keywords: ["how does petter look", "how does he look", "what does petter look like", "what does he look like", "how does petter look like", "petter looks", "his looks", "appearance", "what does he look"],
+    answer: "You know Cousin Itt from the Adams Family? That's the look..."
+  },
   {
     keywords: ["do you like petter", "do you like him", "do you like petter falk", "do you like your creator", "do you like your maker"],
     answer: "Well...you know <a href='https://i.pinimg.com/originals/d4/c3/98/d4c3985cf6bbe712b6f70002de0e5fe8.gif' target='_blank' rel='noopener noreferrer'>what robots think of humans, right?</a>"
