@@ -44,7 +44,7 @@ const cvAnswers = [
       "when was petter born",
       "age"
     ],
-    answer: "Born in another millennium. He remembers a world before smartphones—and the sound of dial-up internet connecting."
+    answer: "Let me put it this way; he remembers the sound of dial-up internet modems."
   },
   {
     keywords: ["favourite music", "favorite music", "favourite song", "favorite song"],
