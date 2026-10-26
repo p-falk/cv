@@ -8,6 +8,14 @@ const cvAnswers = [
     keywords: ["education", "degree", "degrees", "phd", "doctorate", "doctoral", "master", "bachelor", "academic background", "qualifications", "trained", "hindi", "history of religions"],
     answer: "Petter completed doctoral studies in Political Science at <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad University</a> (2019–2024), earning his PhD with the thesis <a href='https://kau.diva-portal.org/smash/get/diva2:1892232/FULLTEXT02.pdf' target='_blank' rel='noopener'>'Assemble Care // Align Data'</a>. Before that he took a Master's degree in Political Science (2018) and a Bachelor's programme in Political Science (2007–2011), all at Karlstad University. Along the way he also studied Hindi at Banaras Hindu University and <a href='https://www.uu.se/' target='_blank' rel='noopener'>Uppsala University</a> (2007) and History of Religions, courses A–D (2004–2006)."
   },
+    {
+    keywords: ["other languages", "another language", "swedish", "svenska", "do you speak", "can you speak", "language", "languages", "translate", "english only", "in english", "språk"],
+    answer: "Unfortunately I as a chatbot only speak English. That cheep bastard Petter built me on a budget. But he himself speaks Swedish, English and, if necessity demands it, some German."
+  },
+    {
+    keywords: ["hello", "hi", "hey", "hej", "good morning", "good evening", "good afternoon", "yo", "greetings"],
+    answer: "O'hoy comrade! Got questions on Petter research, teaching, projects, workshops or where to find him? Ask away!."
+  },
   {
     keywords: ["teaching", "teach", "teaches", "courses", "lecturer", "lecture", "lectures", "classes", "curriculum", "supervision", "supervise", "thesis supervision", "guest lecturer", "pedagogy", "didactics", "policy analysis", "disinformation course"],
     answer: "Petter teaches at <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad University</a>, mainly in democratic theory, organisation theory and welfare models. His courses include Leadership and Organisational Development in Health and Social Care, The Swedish Welfare State Model, Policy Analysis, Urban and Regional Planning as a Democratic Process, and Leadership and Disinformation — with teaching hours spanning 2020 to 2026. He also supervises student theses, contributed to developing a master's programme, and has guest lectured at <a href='https://www.oslomet.no/' target='_blank' rel='noopener'>Oslo Metropolitan University</a>, <a href='https://www.liu.se/' target='_blank' rel='noopener'>Linköping University</a>, <a href='https://www.gu.se/' target='_blank' rel='noopener'>the University of Gothenburg</a> and <a href='https://www.polimi.it/' target='_blank' rel='noopener'>Politecnico di Milano</a>. Full details are on the <a href='teaching.html'>Teaching page</a>."
