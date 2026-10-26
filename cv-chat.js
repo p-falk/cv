@@ -132,7 +132,7 @@ const cvAnswers = [
   },
   {
     keywords: ["family", "children", "child", "kids", "wife", "married", "marriage", "partner", "girlfriend", "son", "daughter"],
-    answer: "I don't know. He almost never talks about private stuff..."
+    answer: "I don't know. He almost never talks about personal stuff..."
   },
   {
     keywords: ["contact", "email", "reach", "mail", "phone", "get in touch", "address"],
