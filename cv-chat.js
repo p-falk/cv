@@ -10,7 +10,7 @@ const cvAnswers = [
   },
     {
     keywords: ["other languages", "another language", "swedish", "svenska", "do you speak", "can you speak", "language", "languages", "translate", "english only", "in english", "språk"],
-    answer: "Unfortunately I as a chatbot only speak English. That cheep bastard Petter built me on a budget. But he himself speaks Swedish, English and, if necessity demands it, some German."
+    answer: "Unfortunately I as a chatbot only speak English. That cheep bastard Petter built me on a budget. But he himself speaks Swedish, English and, if necessity demands it, some German. Oh, and a few conversational phrases in Hindi that he picked up in India."
   },
     {
     keywords: ["hello", "hi", "hey", "hej", "good morning", "good evening", "good afternoon", "yo", "greetings"],
