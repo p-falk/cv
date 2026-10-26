@@ -7,6 +7,10 @@ const cvAnswers = [
     keywords: ["are you an ai", "are you a robot"],
     answer: "AFFIRMATIVE *blip* *blop* *blip* I AM A ROBOT *blip* *blop*"
   },
+    {
+    keywords: ["where does he live", "where does petter live", "where is he based", "based", "lives", "live", "where is he", "where is petter", "city", "town", "home", "resides", "residence"],
+    answer: "Not sure. But he splits his time between <a href='https://www.kau.se/' target='_blank' rel='noopener'>Karlstad</a>, where he is Senior Lecturer at Karlstad University, and <a href='https://www.sh.se/' target='_blank' rel='noopener'>Stockholm</a>, where he is postdoc at Södertörn University (2025–2027). So I guess he lives on a train"
+  },
   {
     keywords: ["favourite movie", "favorite movie", "favourite film", "favorite film"],
     answer: "Indiana Jones (the old movies, not the new ones)."
