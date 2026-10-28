@@ -19,6 +19,10 @@ const cvAnswers = [
     keywords: ["how does petter look", "how does he look", "what does petter look like", "what does he look like", "how does petter look like", "petter looks", "his looks", "appearance", "what does he look"],
     answer: "You know Cousin Itt from the Adams Family? That's the look..."
   },
+    {
+    keywords: ["trust", "Can i trust this", "trustworthy"],
+    answer: "Well, everybody lies a little bit in their CV..."
+  },
   {
     keywords: ["do you like petter", "do you like him", "do you like petter falk", "do you like your creator", "do you like your maker"],
     answer: "Well...you know <a href='https://i.pinimg.com/originals/d4/c3/98/d4c3985cf6bbe712b6f70002de0e5fe8.gif' target='_blank' rel='noopener noreferrer'>what robots think of humans, right?</a>"
