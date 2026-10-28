@@ -4,8 +4,16 @@ const cvAnswers = [
     answer: "This is a small chatbot for exploring Petter Falk's CV. Ask me about his research, publications, teaching, projects or work experience. But a heads up: I may not know the answer to every question."
   },
   {
-    keywords: ["are you an ai", "are you a robot"],
+    keywords: ["are you an ai", "are you a robot" "are you AI", "Do you use AI", "Is this AI"],
     answer: "AFFIRMATIVE *blip* *blop* *blip* I AM A ROBOT *blip* *blop*"
+  },
+    {
+    keywords: ["Saved", "Is this data stored?"],
+    answer: "Nope. Ain't got no room for keeping thing on this ol' computerbox."
+  },
+      {
+    keywords: ["Religion", "Jesus"],
+    answer: "Amen to that."
   },
   {
     keywords: ["hello", "hi", "hey", "hej", "good morning", "good evening", "good afternoon", "yo", "greetings"],
