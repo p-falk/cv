@@ -19,8 +19,12 @@ const cvAnswers = [
     keywords: ["how does petter look", "how does he look", "what does petter look like", "what does he look like", "how does petter look like", "petter looks", "his looks", "appearance", "what does he look"],
     answer: "You know Cousin Itt from the Adams Family? That's the look..."
   },
+      {
+    keywords: ["Image", "Show me an image", "picture"],
+    answer: "Let's not... He's look better in text than on image. "
+  },
     {
-    keywords: ["trust", "Can i trust this", "trustworthy"],
+    keywords: ["trust", "Can i trust this", "trustworthy", "true", "accurate", ],
     answer: "Well, everybody lies a little bit in their CV..."
   },
   {
